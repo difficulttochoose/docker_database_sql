@@ -30,6 +30,13 @@ module.exports = {
         type: Sequelize.ENUM,
         values: ['admin', 'user']
       },
+      activeStatus: {
+        type: Sequelize.BOOLEAN,
+        defaultValue: false
+      },
+      token: {
+        type: Sequelize.STRING,
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
